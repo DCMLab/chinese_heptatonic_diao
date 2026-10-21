@@ -1,8 +1,6 @@
-# Tong Yun San Gong: data and code
+# *Tong Yun San Gong*: data and code
 
-Data and analysis for **“Revisiting Tong Yun San Gong Theory: Corpus Evidence for
-the Distinctions among Three Chinese Heptatonic Diao”**, by Shuxin Meng,
-Fabian C. Moss and Martin A. Rohrmeier.
+Data and analysis for **“Revisiting *Tong Yun San Gong* Theory: Corpus Evidence for the Distinctions among Three Chinese Heptatonic *Diao*”**, by Shuxin Meng, Fabian C. Moss and Martin A. Rohrmeier.
 
 ## Contents
 
@@ -14,21 +12,15 @@ Fabian C. Moss and Martin A. Rohrmeier.
 | [data/README.md](data/README.md) | Field definitions, units, and provenance. |
 | `requirements.txt` | Python dependencies. |
 
-The data tables join on the source filename, `name`. Corpus profiles express each
-score’s declared tonic as C; `source_tonic_pitch_class` records that source tonic.
-Heptatonic model profiles use a common diatonic reference, C–D–E–F–G–A–B.
+The data tables join on the source filename, `name`. Corpus profiles express each score’s declared tonic as C; `source_tonic_pitch_class` records that source tonic. Heptatonic model profiles use a common diatonic reference, C–D–E–F–G–A–B.
 
-The notebook fits three modes to the original annotated corpus, a balanced
-bootstrap sample, and a balanced Dirichlet sample. It also calculates silhouette
-scores for 2–21 modes. Calculations begin with the supplied processed tables.
+The notebook fits three modes to the original annotated corpus, a balanced bootstrap sample, and a balanced Dirichlet sample. It also calculates silhouette scores for 2–21 modes. Calculations begin with the supplied processed tables.
 
 ## Annotated heptatonic dataset
 
-**Diao Annotations for Heptatonic Pieces in the Chinese Collection of the Essen
-Folksong Database** is available on Zenodo: [Zenodo URL].
+**Diao Annotations for Heptatonic Pieces in the Chinese Collection of the Essen Folksong Database** is available on Zenodo: https://zenodo.org/records/14607710.
 
-The dataset is included in this repository as
-[data/heptatonic.csv](data/heptatonic.csv).
+The dataset is included in this repository as [data/heptatonic.csv](data/heptatonic.csv).
 
 ## Run
 
@@ -41,8 +33,7 @@ python -m pip install -r requirements.txt
 jupyter lab analysis.ipynb
 ```
 
-Select **Run → Run All Cells**. Results appear in the notebook, with progress
-messages during model fitting.
+Select **Run → Run All Cells**. Results appear in the notebook, with progress messages during model fitting.
 
 The analysis was run with Python 3.9.6, NumPy 1.26.4, pandas 2.2.3,
 SciPy 1.10.1, Numba 0.60.0, scikit-learn 1.5.2, and JupyterLab 4.2.5.
@@ -55,17 +46,12 @@ The Bayesian mode implementation adapts
 Please cite:
 
 Harasim, D., Moss, F. C., Ramirez, M., & Rohrmeier, M. (2021).
-*Exploring the foundations of tonality: Statistical cognitive modeling of modes
-in the history of Western classical music*. Humanities and Social Sciences
-Communications, 8, 5.
+Exploring the foundations of tonality: Statistical cognitive modeling of modes in the history of Western classical music. *Humanities and Social Sciences Communications, 8*, Article 5.
 [doi:10.1057/s41599-020-00678-6](https://doi.org/10.1057/s41599-020-00678-6).
 
 ## Funding
 
-This project has received funding from the European Research Council (ERC) under
-the European Union’s Horizon 2020 research and innovation programme under grant
-agreement No 760081 – PMSB. The authors also thank Claude Latour for supporting
-this research through the Latour Chair in Digital Musicology at EPFL.
+This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme under grant agreement No 760081 – PMSB. The authors also thank Claude Latour for supporting this research through the Latour Chair in Digital Musicology at EPFL.
 
 ## Licenses
 
