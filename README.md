@@ -37,7 +37,6 @@ Select **Run → Run All Cells**. Results appear in the notebook, with progress 
 
 The analysis was run with Python 3.9.6, NumPy 1.26.4, pandas 2.2.3,
 SciPy 1.10.1, Numba 0.60.0, scikit-learn 1.5.2, and JupyterLab 4.2.5.
-Model fitting took 39 minutes on macOS 14.4 with Apple Silicon.
 
 ## Model attribution
 
